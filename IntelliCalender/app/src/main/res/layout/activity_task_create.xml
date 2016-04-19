@@ -1,0 +1,256 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="intellical.kross.com.intellicalender.TaskCreate">
+
+<LinearLayout
+    android:id="@+id/l1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="true">
+
+    <TextView
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_weight="1" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_below="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true">
+        <TextView
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:text="Location" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loc" />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l12"
+        android:layout_below="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true">
+    <TextView
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:text="Description" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/desc"
+        android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_below="@+id/l12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:layout_weight=".6"
+            android:id="@+id/sDate" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time" />
+
+        <EditText
+            android:layout_weight=".3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sTime" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l4"
+        android:layout_below="@+id/l3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time" />
+
+        <EditText
+            android:layout_weight=".3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/eTime" />
+
+    </LinearLayout>
+
+<RelativeLayout
+        android:id="@+id/l5"
+    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
+    android:layout_below="@+id/l4"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="10dp">
+
+    <ToggleButton
+        android:id="@+id/toggleButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textOn="TUE"
+        android:textOff="TUE" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/toggleButton3"
+        android:textOn="MON"
+        android:textOff="MON" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="Repeat every" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/toggleButton2"
+        android:textOff="SUN"
+        android:textOn="SUN" />
+    
+     </RelativeLayout>
+    <LinearLayout
+        
+        
+        android:id="@+id/l6"
+        android:layout_below="@+id/l5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:baselineAligned="true">
+    	<ToggleButton
+          android:id="@+id/toggleButton4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textOn="WED" 
+        android:textOff="WED"/>
+            <ToggleButton
+          android:id="@+id/toggleButton5"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textOn="THU"
+        android:textOff="THU" />
+            <ToggleButton
+          android:id="@+id/toggleButton6"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textOn="FRI" 
+        android:textOff="FRI"/>
+            <ToggleButton
+          android:id="@+id/toggleButton7"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textOn="SAT" 
+        android:textOff="SAT"/>
+                    
+       
+    </LinearLayout>
+    
+<RelativeLayout
+        android:id="@+id/l8"
+    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:layout_below="@+id/textView2"
+    android:layout_alignParentLeft="true"
+    android:layout_marginTop="50dp">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Cancel"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="right"
+        android:onClick="Add"
+        android:text="Add Task" />
+
+</RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repeat Till"
+        android:id="@+id/textView2"
+        android:layout_alignBottom="@+id/eDate"
+        android:layout_alignParentLeft="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="none"
+        android:layout_weight=".6"
+        android:id="@+id/eDate"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_below="@+id/l6"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CalActivity" >
+    
+    <item android:id="@+id/action_add"
+        android:title="Add Task"
+        android:icon="@android:drawable/ic_input_add"
+        android:orderInCategory="100"
+        android:showAsAction="always|withText" />
+    
+    <item android:id="@+id/action_proindex"
+        android:title="Procarstination Index"
+        android:icon="@android:drawable/progress_indeterminate_horizontal"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom" />
+    
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>

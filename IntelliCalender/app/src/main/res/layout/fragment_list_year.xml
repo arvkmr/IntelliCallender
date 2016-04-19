@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalActivity$PlaceholderFragment">
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton1"
+        android:layout_above="@+id/list00"
+        android:onClick="Previous"
+        android:src="@android:drawable/ic_media_previous"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:onClick="Next"
+        android:src="@android:drawable/ic_media_next"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/ListDateView"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="5dp"/>
+
+    <ListView
+        android:id="@+id/list00"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton"
+        android:drawSelectorOnTop="true"/>
+
+</RelativeLayout>

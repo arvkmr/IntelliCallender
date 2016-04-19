@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="intellical.kross.com.intellicalender" >
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="19"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@android:drawable/ic_menu_my_calendar"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".CalActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TaskCreate"
+            android:label="@string/title_activity_task_create" >
+        </activity>
+        <activity
+            android:name=".TaskDetails"
+            android:label="Task Details" >
+        </activity>
+        
+        <activity
+            android:name=".ProIndex"
+            android:label="Procarstination Index" >
+        </activity>
+        
+        <service android:enabled="true" android:name=".Brains" />
+    </application>
+
+</manifest>
